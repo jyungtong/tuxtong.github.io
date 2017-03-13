@@ -21,3 +21,7 @@ messaging.requestPermission()
     console.log('Error occured');
     console.log(err);
   });
+
+messaging.onMessage(function(payload) {
+  console.log('onMessage: ', payload);
+});
